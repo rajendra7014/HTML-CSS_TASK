@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box; margin: 0; padding: 0:}
+		.product
+		{
+			height: 400px;
+			width: 700px;
+			background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+			background-size: 110% 110%;
+			background-position: -30px 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			transition: 1s;
+		}
+		.product span
+		{
+			font-size: 30px;
+			font-family: cursive;
+			font-weight: bold;
+			color: white;
+			position: absolute;
+			top: 30%;
+			left: 60%;
+		}
+		.effect
+		{
+			height: 250px;
+			width: 500px;
+			background-color: transparent;
+			border: 10px solid white;
+			color: white;
+			font-family: cursive;
+			font-size: 20px;
+			letter-spacing: 5px;
+			word-spacing: 5px;
+			padding: 150px 0px 0px 200px;
+			opacity: 0;
+			transform: translate(-15px,0);
+		}
+		.product:hover
+		{
+			background-position: 0 0;
+		}
+		.product:hover .effect
+		{
+			opacity: 1;
+			transform: translate(0 ,0);
+		}
+	</style>
+</head>
+<body>
+	<div class="product">
+		<span>Fall Ahead</span>
+		<div class="effect">NEW ARRIVALS</div>
+	</div>
+
+</body>
+</html>

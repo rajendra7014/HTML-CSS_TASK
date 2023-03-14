@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		.play
+		{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background: lightblue;
+			margin: 200px auto;
+			text-align: center;
+			line-height:100px;
+			position: relative;
+			z-index: 0;
+			transition: 1s;
+
+		}
+		.fa-solid
+		{
+			font-size: 20px;
+		}
+		.play:hover
+		{
+			background: #000;
+		}
+		.play:hover .fa-solid
+		{
+			color: white;
+		}
+		.effect
+		{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background: lightblue;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			opacity: 1;
+			transition: 1s;
+
+		}
+		.play:hover .effect
+		{
+			transform: scale(1.9);
+			opacity: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="play">
+		<i class="fa-solid fa-play"></i>
+		<div class="effect"></div>
+	</div>
+
+</body>
+</html>

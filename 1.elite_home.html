@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box; margin: 0; padding: 0;}
+		.main 
+		{
+			background: black;
+			height: 100px;
+			width: 100%;
+			text-align: center;
+			line-height: 100px;
+			display: flex;
+
+		}
+		a 
+		{
+			color: white;
+			text-decoration: none;
+		}
+		.home 
+		{
+
+			height: 100px;
+			width: 25%;
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+			
+		}
+		.about 
+		{
+			height: 100px;
+			width: 25%;
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+			
+		}
+		.contact 
+		{
+			height: 100px;
+			width: 25%;
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+			
+		}
+		.men 
+		{
+			height: 100px;
+			width: 25%;
+			position: relative;
+			overflow: hidden;
+			z-index: 0;
+			
+		}
+		.drop
+		{
+			display: none;
+			margin: 200px;
+		}
+		.home::after
+		{
+			content: "";
+			position: absolute;
+			top: 0%;
+			left: -200%;
+			height: 10px;
+			width:100%;
+			background: #2fdab8;
+			transition: 1s;
+			z-index: -1;
+			margin-top: 90px;
+		}
+		.about::after
+		{
+			content: "";
+			position: absolute;
+			top: 0%;
+			left: -200%;
+			height: 10px;
+			width:100%;
+			background: #2fdab8;
+			transition: 1s;
+			z-index: -1;
+			margin-top: 90px;
+		}
+		.contact::after
+		{
+			content: "";
+			position: absolute;
+			top: 0%;
+			left: -200%;
+			height: 10px;
+			width:100%;
+			background: #2fdab8;
+			transition: 1s;
+			z-index: -1;
+			margin-top: 90px;
+		}
+		.men::after
+		{
+			content: "";
+			position: absolute;
+			top: 0%;
+			left: -200%;
+			height: 10px;
+			width:100%;
+			background: #2fdab8;
+			transition: 1s;
+			z-index: -1;
+			margin-top: 90px;
+		}
+		.home:hover::after
+		{
+			 
+			left: 0%;
+		}
+		.about:hover::after
+		{
+			 
+			left: 0%;
+		}
+		.contact:hover::after
+		{
+			 
+			left: 0%;
+		}
+		.men:hover::after
+		{
+			 
+			left: 0%;
+		}
+		
+		.men:hover.drop
+		{
+			display: inline-block;
+		}
+	
+	
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+	
+	<div class="home"><a href="">HOME</a></div>
+	<div class="about"><a href=""> ABOUT</a></div>
+	<div class="contact"><a href=""> CONTACT</a></div>
+	<div class="men"><a href=""> Men's Wear</a>
+     <ul class="drop">
+     	<li>t shirt</li>
+     	<li>t shirt</li>
+     	<li>t shirt</li>
+     	<li>t shirt</li>
+     	<li>t shirt</li>
+     </ul>
+	</div>
+
+ 
+</div>
+</body>
+</html>

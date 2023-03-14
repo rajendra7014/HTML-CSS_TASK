@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.main
+		{
+			height: 400px;
+			width: 100%;
+			background: white;
+			display: flex;
+		}
+		.img1,.img2
+		{
+			height: 400px;
+			width: 50%;
+			position: relative;
+			overflow: hidden;
+			
+		}
+		.img1::after
+		{
+			content: "";
+			height: 400px;
+			width: 600px;
+			background: linear-gradient(gray,rgba(0,0,0,-1.0));
+			position: absolute;
+			top: -70%;
+			right: -110%;
+			
+			transition: 1s;
+		}
+		.img1:hover::after
+		{
+          top: 0%;
+         right: 0%;
+		}
+		.img1::before
+		{
+			content: "";
+			height: 400px;
+			width: 600px;
+			background: linear-gradient(gray,rgba(0,0,0,-1.0));
+			position: absolute;
+			bottom: -70%;
+			left: -110%;
+			
+			transition: 1s;
+		}
+		.img1:hover::before
+		{
+          bottom: 0%;
+         left: 0%;
+		}
+		.img2::after
+		{
+			content: "";
+			height: 400px;
+			width: 600px;
+			background: linear-gradient(gray,rgba(0,0,0,-3.0));
+			position: absolute;
+			top: -70%;
+			right: -110%;
+			
+			transition: 1s;
+		}
+		.img2:hover::after
+		{
+          top: 0%;
+         right: 0%;
+		}
+		.img2::before
+		{
+			content: "";
+			height: 400px;
+			width: 600px;
+			background: linear-gradient(gray,rgba(0,0,0,0.1));
+			position: absolute;
+			bottom: -70%;
+			left: -110%;
+			
+			transition: 1s;
+		}
+		.img2:hover::before
+		{
+          bottom: 0%;
+         left: 0%;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="img1"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg" height="100%" width="100%"> </div>
+		<div class="img2"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg" height="100%"  width="100%"> </div>
+
+	</div>
+
+</body>
+</html>
